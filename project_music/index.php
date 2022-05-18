@@ -92,7 +92,7 @@
             <input type=button style="background-color:red;" onClick="location.href='login.php'"
             value='Login'>
             <div class="user">
-                <img src="img/KDS CODER.png" alt="User" title="MusicM(Pratyush)">
+                <img src="img/logo.png" alt="User" title="MusicM(Pratyush)">
             </div>
         </nav>
         <div class="content">
