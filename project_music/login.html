@@ -1,0 +1,91 @@
+<?php include('constants.php')?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css>
+    <link rel="stylesheet" href="login.css">
+    <title>login and signup page</title>
+</head>
+
+<body>
+    
+    <!-- <img class="bg" src="bg.jpg" alt="Error"> -->
+    <div class="d1">
+        <div class="form_container">
+            <div class="button_box">
+                <div id="btn"></div>
+                <button type="button" class="login_but" onclick="login()">Log In</button>
+                <button type="button" class="login_but" onclick="signup()">Sign Up</button>
+            </div>
+            <form id="login" class="input-group">
+                <input type="text" name="name" id="name" class="input-field" placeholder="User Id" required>
+                <input type="text" name="passward" id="passward" class="input-field" placeholder="Enter Passward"
+                    required>
+                <input type="checkbox" class="check-box"><span id="login-span">Remember Passward</span>
+
+                <button type="submit" class="submit-btn">Log in</button>
+               <a href="https://www.youtube.com/watch?v=1XevoCeOQ9c">Forgot Passward?</a>
+
+               <p id="login-with">Or login with</p>
+            </form>
+
+            <form id="signup" class="input-group">
+                <input type="text" class="input-field" placeholder="User Id" required>
+
+                <input type="email" name="email" id="email" class="input-field" placeholder="Email Id" required>
+                <input type="password" name="password" id="password" class="input-field" placeholder="Enter Passward"
+                    required>
+                <input type="checkbox" class="check-box">
+                <span id="signup-span"><a href="http://127.0.0.1:5500/terms.html">I agree to the terms and conditions</span></a>
+                <button type="submit" class="submit-btn">Sign up</button>
+             
+
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="social-menu">
+
+        <ul>
+            <li><a href=""><i class="fa fa-facebook"></i></a></li>
+            <li><a href=""><i class="fa fa-twitter"></i></a></li>
+            <li><a href=""><i class="fa fa-instagram"></i></a></li>
+            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    
+</div>
+
+
+<script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+
